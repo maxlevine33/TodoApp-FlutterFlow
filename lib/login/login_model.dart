@@ -1,4 +1,6 @@
+import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/index.dart';
 import 'login_widget.dart' show LoginWidget;
 import 'package:flutter/material.dart';
 
@@ -74,6 +76,8 @@ class LoginModel extends FlutterFlowModel<LoginWidget> {
   TextEditingController? loginPasswordTextController;
   late bool loginPasswordVisibility;
   String? Function(BuildContext, String?)? loginPasswordTextControllerValidator;
+  // Stores action output result for [Backend Call - API (Inspirational Quotes)] action in Login_Button widget.
+  ApiCallResponse? apiResultjgo;
 
   @override
   void initState(BuildContext context) {

@@ -1,4 +1,6 @@
+import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/index.dart';
 import 'onboarding_widget.dart' show OnboardingWidget;
 import 'package:flutter/material.dart';
 
@@ -19,6 +21,8 @@ class OnboardingModel extends FlutterFlowModel<OnboardingWidget> {
   FocusNode? textFieldFocusNode2;
   TextEditingController? textController2;
   String? Function(BuildContext, String?)? textController2Validator;
+  // Stores action output result for [Backend Call - API (Inspirational Quotes)] action in Button widget.
+  ApiCallResponse? apiResult7c4;
 
   @override
   void initState(BuildContext context) {}
